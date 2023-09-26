@@ -8,6 +8,7 @@ header {
   margin: auto;
   margin-bottom: 50px;
   margin-top: 95px;
+  background: inherit;
 }
 header h1, header h2, header p {
   text-align: center;
@@ -39,19 +40,24 @@ header p {
 .card p {
   color: hsl(229, 6%, 66%);
 }
-.card .supervisor {
+
+.supervisor {
   border-top: solid 4px hsl(180, 62%, 55%);
 }
-.card .karma {
+
+.karma {
   border-top: solid 4px hsl(34, 97%, 64%);
 }
-.card .calculator {
+
+.calculator {
   border-top: solid 4px hsl(212, 86%, 64%);
 }
-.card .team-builder {
+
+.team-builder {
   border-top: solid 4px hsl(0, 78%, 62%);
 }
-.card .icon-container {
+
+.icon-container {
   display: flex;
   justify-content: flex-end;
   margin-top: 24px;

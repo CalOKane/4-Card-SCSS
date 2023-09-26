@@ -1,0 +1,6 @@
+Homework 1 SASS
+Good effort on this task.
+I see you have correctly used nesting on your card class for the nested h3, p and icon container children, however the classes supervisor, karma, calculator, and team builder should not be inside of this nest.
+Because you have nested those classes inside the card class,  the browser is looking for a class of karma, calculator etc INSIDE the card class which obviously doesn’t exist in your html, so there is nothing to apply the style to.
+You have actually set up and used your colour variable correctly, it’s just you have applied them to elements that don’t exist. To fix it, grab hold of lines 57 to 77 and move them outside of the nest, and all your colours will work.
+If you want to carry on and have a go at inheritance and mixins I’m happy to offer further feedback on that.

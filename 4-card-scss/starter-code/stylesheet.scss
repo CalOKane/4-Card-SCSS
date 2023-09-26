@@ -3,6 +3,12 @@ $orange: hsl(34, 97%, 64%);
 $blue:  hsl(212, 86%, 64%);
 $red:  hsl(0, 78%, 62%);
 
+@mixin icon-placement {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+
 body {
   background: hsl(0, 0%, 98%);
   font-family: Poppins, "Courier New", Courier, monospace;
@@ -15,6 +21,7 @@ body {
     margin: auto;
     margin-bottom: 50px;
     margin-top: 95px;
+    background: inherit;
 
    h1, h2, p {
     text-align: center;
@@ -54,29 +61,29 @@ body {
           color: hsl(229, 6%, 66%);
          }
 
-        .supervisor {
-          border-top: solid 4px $cyan;
-        }
-  
-        .karma {
-          border-top: solid 4px $orange;
-        }
-  
-        .calculator {
-          border-top: solid 4px $blue;
-        }
-  
-        .team-builder {
-          border-top: solid 4px $red;
-        }
         
-        .icon-container {
-          display: flex;
-          justify-content: flex-end;
-          margin-top: 24px;
-        }
 
      
+}
+
+.supervisor {
+  border-top: solid 4px $cyan;
+}
+
+.karma {
+  border-top: solid 4px $orange;
+}
+
+.calculator {
+  border-top: solid 4px $blue;
+}
+
+.team-builder {
+  border-top: solid 4px $red;
+}
+
+.icon-container {
+  @include icon-placement;
 }
 
 @media screen and (min-width:1440px) {
@@ -90,7 +97,6 @@ body {
  .supervisor {
   margin-bottom: 170px;
   margin-right: 35px;
-
  }
 
 .calculator {
