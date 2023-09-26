@@ -1,0 +1,110 @@
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue:  hsl(212, 86%, 64%);
+$red:  hsl(0, 78%, 62%);
+
+body {
+  background: hsl(0, 0%, 98%);
+  font-family: Poppins, "Courier New", Courier, monospace;
+
+}
+ 
+  header {
+
+    width: 320px;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 95px;
+
+   h1, h2, p {
+    text-align: center;
+   }
+
+    h1, h2 {
+        color: hsl(234, 12%, 34%);
+        font-size: 26px;
+    }
+
+    h1 { 
+      font-weight: 200px;
+    }
+
+    p {
+      color: hsl(229, 6%, 66%);
+      font-size: 16px;
+     }
+
+  }
+
+  .card {
+
+        border-radius: 6px;
+        background-color: #ffffff;
+        width: 300px;
+        margin: auto;
+        padding: 25px;
+        padding-top: 6px;
+        margin-bottom: 36px;
+
+        h3 {
+          color: hsl(234, 12%, 34%);
+         }
+
+         p {
+          color: hsl(229, 6%, 66%);
+         }
+
+        .supervisor {
+          border-top: solid 4px $cyan;
+        }
+  
+        .karma {
+          border-top: solid 4px $orange;
+        }
+  
+        .calculator {
+          border-top: solid 4px $blue;
+        }
+  
+        .team-builder {
+          border-top: solid 4px $red;
+        }
+        
+        .icon-container {
+          display: flex;
+          justify-content: flex-end;
+          margin-top: 24px;
+        }
+
+     
+}
+
+@media screen and (min-width:1440px) {
+            
+  .container {
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  }
+
+ .supervisor {
+  margin-bottom: 170px;
+  margin-right: 35px;
+
+ }
+
+.calculator {
+  margin-bottom: 170px;
+  margin-left: 35px;
+  }
+
+  header {
+    width: 550px;
+  }
+
+  h1, h2 {
+    scale: 150%;
+  }
+ 
+}
+
